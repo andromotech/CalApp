@@ -1,4 +1,4 @@
 package andromo.calapp.Activity;
 
-public class test {
+public class Test {
 }
