@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="ofont">fonts/odia.ttf</string>
+    <string name="not_admin_name">Odia CaL</string>
+    <string name="not_admin_description">Daily Rashifala Notification</string>
+    <!--string name="ad_view">ca-app-pub-2214774765300158/5919765386</string!-->
+
+</resources>

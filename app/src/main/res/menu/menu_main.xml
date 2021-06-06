@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="କୋହିନୁର ପଞ୍ଜିକା ୨୦୨୦"
+	      android:id="@+id/kohi"
+	      android:icon="@android:drawable/ic_menu_day"/>
+	
+	<item android:title="ଅସଲି ଖଡିରତ୍ନ ପଞ୍ଜିକା ୨୦୨୦"
+	      android:id="@+id/radhar"
+	      android:icon="@android:drawable/ic_menu_day"/>
+	
+	<item android:title="ଭାଗ୍ୟଦୀପ ୨୦୨୦"
+	      android:id="@+id/bhagya"
+	      android:icon="@android:drawable/ic_menu_day"/>
+	
+	<item android:title="ବିରଜା ପଞ୍ଜିକା ୨୦୨୦"
+	      android:id="@+id/bira"
+	      android:icon="@android:drawable/ic_menu_day"/>
+	
+	<item android:title="ଓଡିଶା ସରକାରୀ ଛୁଟି ତାଲିକା"
+	      android:id="@+id/govtc"
+	      android:icon="@android:drawable/ic_menu_agenda"/>
+	
+	<item android:title="କ୍ୟାଲେଣ୍ଡର ୨୦୨୦">
+		<menu>
+			
+			<item
+					android:title="ଶୁଭ ସମୟ ୨୦୨୦"
+					android:icon="@android:drawable/ic_menu_agenda"
+					android:id="@+id/audate"/>
+			<item
+					android:title="ଓଡ଼ିଆ ପାଞ୍ଜି ୨୦୨୦"
+					android:icon="@android:drawable/ic_menu_agenda"
+					android:id="@+id/panji19"/>
+		</menu>
+	</item>
+	
+	<item android:title="ଉପଯୋଗି">
+		<menu>
+			<item
+					android:title="ଦୈନିକ ରାଶିଫଳ"
+					android:icon="@android:drawable/ic_menu_my_calendar"
+					android:id="@+id/dainika"/>
+			<item
+					android:title="ଆଜିର ଅନୁଚିନ୍ତା"
+					android:icon="@android:drawable/ic_menu_my_calendar"
+					android:id="@+id/anuchi"/>
+			<item
+					android:title="Privacy Policy"
+					android:icon="@android:drawable/btn_star"
+					android:id="@+id/prv"/>
+			
+			
+			<item
+					android:title="ରେଟ କରନ୍ତୁ"
+					android:icon="@android:drawable/btn_star"
+					android:id="@+id/rate"/>
+		
+		
+		</menu>
+	</item>
+</menu>

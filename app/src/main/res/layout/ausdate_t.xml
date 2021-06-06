@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:fillViewport="true"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="560dp"
+    android:layout_height="420dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#FFFF">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView  android:textColor="#4CAF50"
+            android:id="@+id/TextView21"
+            android:text="ବିବାହ ସମୟ"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:autoText="false"
+            android:background="?android:attr/actionModeSplitBackground">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ଜାନୁଆରୀ: ୧୫ , ୧୭ , ୧୮ , ୨୩ , ୨୪ , ୨୫ , ୨୬ , ୨୭ , ୨୮ , ୨୯ , ୩୦"
+            android:id="@+id/textView2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଫେବୃଆରୀ ବିବାହ - ତା ୧, ୬, ୮, ୯, ୧୦, ୧୧, ୧୫, ୨୦, ୨୧, ୨୨, ୨୩, ୨୫, ୨୬, ୨୮ ରିଖ"
+            android:id="@+id/textView4"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମାର୍ଚ୍ଚ ବିବାହ - ତା ୭, ୮, ୯, ୧୨, ୧୩ ରିଖ"
+            android:id="@+id/textView5"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଏପ୍ରିଲ ବିବାହ -ତା ୧୬, ୧୭, ୧୮, ୨୦, ୨୨, ୨୪, ୨୫, ୨୬, ୨୭, ୨୮ ରିଖ "
+            android:id="@+id/textView6"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମଇ
+ବିବାହ ତା ୨, ୬, ୭, ୮, ୧୨, ୧୩, ୧୬, ୧୯, ୨୧, ୨୩, ୨୪, ୨୫, ୨୬, ୨୮, ୨୯, ୩୦, ୩୧ ରିଖ "
+            android:id="@+id/textView7"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁନ
+ବିବାହ ତା ୪, ୧୦, ୧୨, ୧୩, ୧୯, ୨୧, ୨୨, ୨୪, ୨୫, ୨୬, ୨୭, ୨୮"
+            android:id="@+id/textView8"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁଲାଇ
+ବିବାହ  ତା ୬, ୭, ୮ ରିଖ "
+            android:id="@+id/textView9"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ନଭେମ୍ବର
+ବିବାହ ତା ୧୯ , ୨୦ , ୨୨ , ୨୪ , ୨୭ , ୨୮ , ୨୯ , ୩୦  ରିଖ "
+            android:id="@+id/textView49"
+            android:layout_column="0" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଡ଼ିସେମ୍ବର
+ବିବାହ ତା ୧ , ୨ , ୩ , ୫ , ୬ , ୭ , ୮ , ୧୦ , ୧୧  ରିଖ "
+            android:id="@+id/textView499"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#4CAF50"
+            android:text="ଗୃହ ପ୍ରବେଶ:"
+            android:id="@+id/textView10"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="?android:attr/actionModeSplitBackground" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜାନୁଆରୀ ୧୮ , ୨୭ , ୩୦"
+            android:id="@+id/textView13"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଫେବୃଆରୀ ୧୫ , ୨୧  "
+            android:id="@+id/textView14"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମାର୍ଚ୍ଚ ୧୩  "
+            android:id="@+id/textView15"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଏପ୍ରିଲ ୧୭ , ୨୬ , ୨୯"
+            android:id="@+id/textView16"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମେ  ୨ , ୧୬ , ୨୩ , ୨୪ , ୨୯ , ୩୦ , ୩୧  "
+            android:id="@+id/textView17"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁନ   ୭ , ୧୨ , ୧୩ , ୨୭ , ୨୮  "
+            android:id="@+id/textView18"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁଲାଇ  ୮ "
+            android:id="@+id/textView109"
+            android:layout_column="0" />
+    </TableRow>
+	
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ନଭେମ୍ବର ୭ , ୧୪ , ୧୮ , ୨୨ "
+            android:id="@+id/textView109"
+            android:layout_column="0" />
+    </TableRow>
+	
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଡ଼ିସେମ୍ବର   ୨ , ୬  "
+            android:id="@+id/textView109"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#4CAF50"
+            android:text="ବ୍ରତ ଘର:"
+            android:id="@+id/textView19"
+            android:layout_column="0"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:background="?android:attr/actionModeSplitBackground" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜାନୁଆରୀ ବ୍ରତ ଘର- ତା ୩୦ ରିଖ "
+            android:id="@+id/textView20"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଫେବୃଆରୀ
+ବ୍ରତ  ତା ୬ , ୭ , ୮ , ୧୦ , ୧୫ , ୨୧ ରିଖ "
+            android:id="@+id/textView22"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମାର୍ଚ୍ଚ - ତା ୧୮ , ୨୪ , ୩୧ ରିଖ "
+            android:id="@+id/textView23"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଏପ୍ରିଲ
+ବ୍ରତ ତା ୧ , ୩ , ୧୭ , ୨୮ , ୨୯  ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+	
+	
+<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ମେ
+ବ୍ରତ ତା ୨ , ୧୩ , ୧୬ , ୨୪ , ୨୯ , ୩୧ ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁନ 
+ବ୍ରତ ତା ୭ , ୧୨ , ୧୩ , ୨୩ , ୨୭ , ୨୮  ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଜୁଲାଇ 
+ବ୍ରତ ତା ୮  ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ନଭେମ୍ବର
+ବ୍ରତ ତା ୧୪  ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#673AB7"
+            android:text="ଡ଼ିସେମ୍ବର 
+ବ୍ରତ ତା ୧ , ୬   ରିଖ "
+            android:id="@+id/textView24"
+            android:layout_column="0" />
+    </TableRow>
+
+</TableLayout>
+</ScrollView>
