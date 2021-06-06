@@ -4,7 +4,7 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.text.style.TypefaceSpan;
-
+// add something
 public class CustomFont extends TypefaceSpan {
 
     private final Typeface newType;
