@@ -8,7 +8,7 @@ public class Dp extends Activity {
 
     private static int DP_TIMEOUT=3000;
 
-
+//created by Adromo Tech
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
