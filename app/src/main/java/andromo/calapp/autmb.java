@@ -58,7 +58,6 @@ public class autmb extends Activity {
         TextView39.setTypeface(myTypeface);
         TextView40.setTypeface(myTypeface);
         TextView41.setTypeface(myTypeface);
-        //TextView42.setTypeface(myTypeface);
         TextView43.setTypeface(myTypeface);
         TextView44.setTypeface(myTypeface);
         
