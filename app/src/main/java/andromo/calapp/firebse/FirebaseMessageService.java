@@ -11,16 +11,20 @@ import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.NotificationCompat;
-import andromo.calapp.MainActivity;
-import andromo.calapp.R;
+
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Random;
+
+import andromo.calapp.MainActivity;
+import andromo.calapp.R;
 
 
 

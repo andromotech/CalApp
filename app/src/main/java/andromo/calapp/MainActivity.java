@@ -1,6 +1,4 @@
 package andromo.calapp;
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,21 +12,7 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.Build;
-//import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
-//import android.support.annotation.RequiresApi;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.util.Log;
@@ -39,11 +23,26 @@ import android.view.SubMenu;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import andromo.calapp.Activity.BhagActivity;
 import andromo.calapp.Activity.BiActivity;
@@ -57,8 +56,9 @@ import andromo.calapp.model.SplView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import java.util.ArrayList;
-import java.util.List;
+
+//import android.os.Build.VERSION_CODES;
+//import android.support.annotation.RequiresApi;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             notificationChannel.setShowBadge(true);
             notificationManager.createNotificationChannel(notificationChannel2);
         }
-        interstitialAd.setAdListener(new InterstitialAdListener() {
+        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
             @Override
             public void onInterstitialDisplayed(Ad ad) {
                 // Interstitial ad displayed callback
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-        });
+        };
 
         // For auto play video ads, it's recommended to load the ad
         // at least 30 seconds before it is shown
@@ -309,11 +309,11 @@ public class MainActivity extends AppCompatActivity {
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
                 if (scrollRange + verticalOffset == 0) {
-                       collapsingToolbar.setTitle("ଛୁଟି ତାଲିକା/କ୍ୟାଲେଣ୍ଡର ୨୦୨୦");
+                       collapsingToolbar.setTitle("ଛୁଟି ତାଲିକା/କ୍ୟାଲେଣ୍ଡର ୨୦୨୨");
                        collapsingToolbar.setExpandedTitleColor(Color.parseColor("#FFFFFF"));
                     isShow = true;
                 } else if (isShow) {
-                        collapsingToolbar.setTitle("ଛୁଟି ତାଲିକା/କ୍ୟାଲେଣ୍ଡର ୨୦୨୦");
+                        collapsingToolbar.setTitle("ଛୁଟି ତାଲିକା/କ୍ୟାଲେଣ୍ଡର ୨୦୨୨");
                        collapsingToolbar.setExpandedTitleColor(Color.parseColor("#FFFFFF"));
                     isShow = true;
                 }

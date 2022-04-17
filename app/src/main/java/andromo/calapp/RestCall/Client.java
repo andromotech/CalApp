@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Client {
 
-    public static final String URL = "http://sm05.co.in";
+    public static final String URL = "https://sm05.online";
     public static Retrofit retrofit = null;
 
     public static Retrofit getClient(){

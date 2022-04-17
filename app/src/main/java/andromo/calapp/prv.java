@@ -1,9 +1,10 @@
 package andromo.calapp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.appcompat.app.AppCompatActivity;
 public class prv extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,7 +15,7 @@ public class prv extends AppCompatActivity {
         wb.getSettings().setDisplayZoomControls(false);
         wb.getSettings().setUseWideViewPort(true);
         wb.setInitialScale(50);
-        wb.loadUrl("http://www.sm05.co.in/privacy_policy.html");
+        wb.loadUrl("https://www.sm05.online/privacy_policy.html");
         wb.setWebViewClient(new WebViewClient());
         wb.getSettings().setJavaScriptEnabled(true);
         wb.setWebViewClient(new WebViewClient() {

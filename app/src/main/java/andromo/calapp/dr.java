@@ -1,10 +1,11 @@
 package andromo.calapp;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
@@ -27,7 +28,7 @@ public class dr extends AppCompatActivity {
         LinearLayout adContainer1 = (LinearLayout) findViewById(R.id.banner_container1);
         adContainer.addView(adView);
         adContainer1.addView(adView1);
-        adView.setAdListener(new AdListener() {
+        AdListener adListener = new AdListener() {
             @Override
             public void onError(Ad ad, AdError adError) {
                 // Ad error callback
@@ -49,7 +50,7 @@ public class dr extends AppCompatActivity {
             public void onLoggingImpression(Ad ad) {
                 // Ad impression logged callback
             }
-        });
+        };
 
         adView.loadAd();
         adView1.loadAd();
@@ -59,7 +60,7 @@ public class dr extends AppCompatActivity {
         wb.getSettings().setDisplayZoomControls(false);
         wb.getSettings().setUseWideViewPort(true);
         wb.setInitialScale(50);
-        wb.loadUrl("http://www.sm05.co.in/dahlyr.jpg");
+        wb.loadUrl("https://www.sm05.online/dahlyr.jpg");
         wb.setWebViewClient(new WebViewClient());
         wb.getSettings().setJavaScriptEnabled(true);
         wb.setWebViewClient(new WebViewClient() {

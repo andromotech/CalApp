@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:title="କୋହିନୁର ପଞ୍ଜିକା ୨୦୨୦"
+	<item android:title="କୋହିନୁର ପଞ୍ଜିକା ୨୦୨୨"
 	      android:id="@+id/kohi"
 	      android:icon="@android:drawable/ic_menu_day"/>
 	
-	<item android:title="ଅସଲି ଖଡିରତ୍ନ ପଞ୍ଜିକା ୨୦୨୦"
+	<item android:title="ଅସଲି ଖଡିରତ୍ନ ପଞ୍ଜିକା ୨୦୨୨"
 	      android:id="@+id/radhar"
 	      android:icon="@android:drawable/ic_menu_day"/>
 	
-	<item android:title="ଭାଗ୍ୟଦୀପ ୨୦୨୦"
+	<item android:title="ଭାଗ୍ୟଦୀପ ୨୦୨୨"
 	      android:id="@+id/bhagya"
 	      android:icon="@android:drawable/ic_menu_day"/>
 	
-	<item android:title="ବିରଜା ପଞ୍ଜିକା ୨୦୨୦"
+	<item android:title="ବିରଜା ପଞ୍ଜିକା ୨୦୨୨"
 	      android:id="@+id/bira"
 	      android:icon="@android:drawable/ic_menu_day"/>
 	
@@ -20,15 +20,15 @@
 	      android:id="@+id/govtc"
 	      android:icon="@android:drawable/ic_menu_agenda"/>
 	
-	<item android:title="କ୍ୟାଲେଣ୍ଡର ୨୦୨୦">
+	<item android:title="କ୍ୟାଲେଣ୍ଡର ୨୦୨୨">
 		<menu>
 			
 			<item
-					android:title="ଶୁଭ ସମୟ ୨୦୨୦"
+					android:title="ଶୁଭ ସମୟ ୨୦୨୨"
 					android:icon="@android:drawable/ic_menu_agenda"
 					android:id="@+id/audate"/>
 			<item
-					android:title="ଓଡ଼ିଆ ପାଞ୍ଜି ୨୦୨୦"
+					android:title="ଓଡ଼ିଆ ପାଞ୍ଜି ୨୦୨୨"
 					android:icon="@android:drawable/ic_menu_agenda"
 					android:id="@+id/panji19"/>
 		</menu>

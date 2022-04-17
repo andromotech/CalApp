@@ -1,9 +1,11 @@
 package andromo.calapp.CalDisp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import andromo.calapp.R;
 
 public class BhagCalD extends AppCompatActivity {

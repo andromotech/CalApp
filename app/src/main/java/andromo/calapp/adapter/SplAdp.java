@@ -3,19 +3,22 @@ package andromo.calapp.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import andromo.calapp.CalDisp.SplCalD;
-import andromo.calapp.R;
-import andromo.calapp.model.SplModel;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
+import andromo.calapp.CalDisp.SplCalD;
+import andromo.calapp.R;
+import andromo.calapp.model.SplModel;
 
 public class SplAdp extends RecyclerView.Adapter<SplAdp.MyViewHolder> {
 
@@ -74,7 +77,7 @@ public class SplAdp extends RecyclerView.Adapter<SplAdp.MyViewHolder> {
                         intent.putExtra("name", spllist.get(pos).getName());
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         mContext.startActivity(intent);
-                        Toast.makeText(v.getContext(), "କ୍ୟାଲେଣ୍ଡର ୨୦୧୯" + clickedDataItem.getName(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(v.getContext(), "କ୍ୟାଲେଣ୍ଡର ୨୦୨୨" + clickedDataItem.getName(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });

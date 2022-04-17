@@ -7,35 +7,37 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import andromo.calapp.R;
 import andromo.calapp.RestCall.Client;
 import andromo.calapp.RestCall.Server;
 import andromo.calapp.adapter.KohinAdp;
-import andromo.calapp.model.KohiView;
 import andromo.calapp.model.KohiModel;
+import andromo.calapp.model.KohiView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class KohiActivity extends AppCompatActivity {
@@ -58,7 +60,7 @@ public class KohiActivity extends AppCompatActivity {
         initCollapsingToolbar();
         AudienceNetworkAds.initialize(this);
         interstitialAd = new InterstitialAd(this, "2714843328612870_2714844755279394");
-        interstitialAd.setAdListener(new InterstitialAdListener() {
+        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
             @Override
             public void onInterstitialDisplayed(Ad ad) {
 
@@ -90,7 +92,7 @@ public class KohiActivity extends AppCompatActivity {
 
             }
 
-        });
+        };
 
         interstitialAd.loadAd();
 

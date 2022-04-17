@@ -16,20 +16,23 @@
 		    android:supportsRtl="true"
 		    android:largeHeap="true"
 		    android:usesCleartextTraffic="true"
-		    android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+		    android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning"
+		    tools:targetApi="m">
 	    <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
         <activity
                 android:name=".Dp"
                 android:label="Odia Calendar"
-                android:screenOrientation="portrait"
-                android:theme="@android:style/Theme.Black.NoTitleBar" >
+                android:screenOrientation="fullSensor"
+                android:theme="@android:style/Theme.Black.NoTitleBar"
+		        android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name="andromo.calapp.MainActivity"
-                  android:configChanges="orientation|screenSize">
+                  android:configChanges="orientation|screenSize"
+		        android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -122,22 +125,27 @@
 	    <activity
                 android:name="com.google.android.gms.ads.AdActivity"
                 android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-                android:theme="@android:style/Theme.Translucent" />
+                android:theme="@android:style/Theme.Translucent"
+			    tools:ignore="MissingClass" />
         <meta-data
                 android:name="com.google.android.gms.version"
                 android:value="@integer/google_play_services_version" />
 	   
 	    <service
 			    android:name=".firebse.FirebaseMessageService"
-			    android:permission="com.google.android.c2dm.permission.SEND">
+			    android:permission="com.google.android.c2dm.permission.SEND"
+			    android:exported="false">
 		    <intent-filter>
 			    <action android:name="com.google.firebase.MESSAGING_EVENT" />
 			    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 		    </intent-filter>
 	    </service>
-	    <service android:name=".firebse.FireBaseInstanceIDService">
+	    <service android:name="andromo.calapp.firebse.FireBaseInstanceIDService"
+			    tools:ignore="Instantiatable"
+			    android:exported="true"
+			    >
 		    <intent-filter>
-			    <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+			    <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
 		    </intent-filter>
 		    <meta-data
 				    android:name="com.google.firebase.messaging.default_notification_icon"
@@ -149,5 +157,6 @@
 	    </service>
 	    <meta-data android:name="135495688" android:value="202749751" />
     </application>
+	
 
 </manifest>

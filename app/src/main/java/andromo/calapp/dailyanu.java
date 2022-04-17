@@ -5,7 +5,6 @@ import android.os.Bundle;
 
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
-import com.facebook.ads.AdView;
 import com.facebook.ads.AudienceNetworkAds;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
@@ -13,12 +12,13 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class dailyanu extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    private static String url = "http://sm05.co.in/anu/yt.json";
+    private static String url = "https://sm05.online/anu/yt.json";
     String url1;
     private InterstitialAd interstitialAd ;
     @Override
@@ -31,7 +31,7 @@ public class dailyanu extends YouTubeBaseActivity implements YouTubePlayer.OnIni
         new GetContacts().execute();
         AudienceNetworkAds.initialize(this);
         interstitialAd = new InterstitialAd(this, "2714843328612870_2714844755279394");
-        interstitialAd.setAdListener(new InterstitialAdListener() {
+        InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
             @Override
             public void onInterstitialDisplayed(Ad ad) {
                 // Interstitial ad displayed callback
@@ -70,7 +70,7 @@ public class dailyanu extends YouTubeBaseActivity implements YouTubePlayer.OnIni
 
             }
 
-        });
+        };
 
         // For auto play video ads, it's recommended to load the ad
         // at least 30 seconds before it is shown

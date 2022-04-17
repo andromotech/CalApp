@@ -1,5 +1,6 @@
 package andromo.calapp;
 
+import android.annotation.SuppressLint;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.text.TextPaint;
@@ -24,6 +25,7 @@ public class CustomFont extends TypefaceSpan {
         applyCustomTypeFace(paint, newType);
     }
 
+    @SuppressLint("WrongConstant")
     private static void applyCustomTypeFace(Paint paint, Typeface tf) {
         int oldStyle;
         Typeface old = paint.getTypeface();
